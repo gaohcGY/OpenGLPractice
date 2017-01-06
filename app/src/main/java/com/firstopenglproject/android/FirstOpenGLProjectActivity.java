@@ -17,7 +17,7 @@ public class FirstOpenGLProjectActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_first_open_glproject);
+        
         glSurfaceView = new GLSurfaceView(this);
         
         final ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);

@@ -1,13 +1,14 @@
-include ':app'
+include ':app', ':airhockey1'
 //全局的配置，这里对应的android编译的版本号和buildTools的版本号
-void initEnvironment(){
-    gradle.ext.minSdkVersion=15;
-    gradle.ext.targetSdkVersion=19;
-    gradle.ext.compileSdkVersion=23;
-    gradle.ext.buildToolsVersion="23.0.1";
+void initEnvironment() {
+    gradle.ext.minSdkVersion = 15;
+    gradle.ext.targetSdkVersion = 19;
+    gradle.ext.compileSdkVersion = 23;
+    gradle.ext.buildToolsVersion = "23.0.1";
 //    gradle.ext.snapReleaseKeystoreFile=file('./otherFile/AirchinaMEAP-release.keystore')
 ////    //这里先写死到程序里
 //    gradle.ext.meapReleaseKeystorePassword="airchina@M1"
 //    gradle.ext.meapReleaseKeystoreAliasPassword="airchinameap"
 }
+
 initEnvironment();
